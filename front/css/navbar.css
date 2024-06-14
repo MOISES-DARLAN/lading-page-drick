@@ -1,0 +1,27 @@
+
+#navbarNav{
+    background-color: brown;
+    text-align: end;
+    
+}
+
+.logo{
+    max-width: 100px;
+}
+
+#menu{
+    text-align: center;
+    background-color: #ffffff;
+}
+
+#navbarNav{
+    background-color: #ffffff;
+   
+    justify-content: end;
+}
+
+.nav-link{
+    font-family: "Montserrat", sans-serif;
+}
+
+
