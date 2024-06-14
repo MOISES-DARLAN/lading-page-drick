@@ -1,5 +1,6 @@
-/* Copy this code after the above code */
-/* Copy this code after the above code */
+.area-1, .area-2, .area-3, .area-4{
+  visibility: hidden;
+}
 /* Copy this code after the above code */
 @keyframes jogar-top {
   0% {
@@ -32,16 +33,16 @@
 
 
   #home-text{
-      animation-name: jogar-top;
-      animation-duration: 0.5s;
-      animation-iteration-count: 1;
+      animation-name: jogar-top; 
+       animation-duration: 0.5s;
+      animation-iteration-count: 1; 
       font-size: 1.5rem;
       font-family: "Montserrat", sans-serif;
       }
       
-      #home-text h1{
-      animation-duration: 3s;       
-    font-family: "";
+      #home-text h1{  
+        font-size: 1.5rem;
+    font-family: '';
   }
 
   @media screen and (max-width: 576px) {
@@ -92,9 +93,12 @@
         }
         #home-itens h1{
           text-align: start;
+          color: aliceblue;
      }
     }
  
-
+p{
+  font-family: "Istok Web", sans-serif;
+}
 
   
