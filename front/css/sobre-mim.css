@@ -11,20 +11,54 @@
     }
   }
 
-/* #sobre-mim{
-    animation: jogar-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-} */
+  #sobre-mim{
+    margin-bottom: auto;
+  }
 
+.title{
+    font-family: 'italiana', serif;
+}
 #img-wtsp{
     max-width: 40px;
 }
 
 button div P{
     margin: 0;
+    width: 80%;
 }
 .btn-text{
     font-size: 1.5rem;
 }
+
+#btn-info{
+    width: 100%;
+    background-color: #2C6893;
+}
+
+#btn-info:hover{
+    background-color: #c7c541;
+}
+
+@media screen and (max-width: 576px) {
+    .title{
+        text-align: center;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    .title{
+        text-align: center;
+    }
+
+
+   }
+
+   @media screen and (min-width: 992px) { 
+    #btn-info{
+        width: 100%;
+    }
+}
+  
 
 
 

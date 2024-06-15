@@ -8,6 +8,9 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +31,7 @@
     <link rel="stylesheet" href="/front/css/home.css" />
     <link rel="stylesheet" href="/front/css/navbar.css" />
     <link rel="stylesheet" href="/front/css/sobre-mim.css">
+    <link rel="stylesheet" href="./css/serviços.css">
   </head>
 
   <body>
@@ -42,11 +46,11 @@
           <ul class="navbar-nav" id="menu">
             <li class="nav-item">
             <h4>
-                <a class="nav-link" aria-current="page" href="#">Sobre</a>
+                <a class="nav-link" aria-current="page" href="#sobre-mim">Sobre</a>
             </h4>
             </li>
             <li class="nav-item">
-            <h4><a class="nav-link" href="#">Serviços</a><h4>
+            <h4><a class="nav-link" href="#Serviços">Serviços</a><h4>
             </li>
             <li class="nav-item">
             <h4><a class="nav-link" href="#">Contatos</a><h4>
@@ -56,30 +60,95 @@
       </div>
     </nav>
 
-    <section id="home" class="container-fluid">
+    <section id="home" class="container-fluid mb-5">
       <div class="container row" id="home-itens">
         <div class="col-lg-6 col-md-12" id="home-text">
-          <h1 class="display-1 text-white">Realizando Sonhos, Criando Memórias</h1>
+          <h1 class="display-1 text-white area-1">Realizando Sonhos, Criando Memórias</h1>
         </div>
       </div>
     </section>
 
-    <section id="sobre-mim" class="container-fluid MB-4">
+    <section id="sobre-mim" class="container-fluid">
       <div class="container row m-auto">
         <div class="col-lg-6 col-md-12">
-          <h1 class="display-1 area-1"  >Sobre mim</h1>
+          <h1 class="display-1 area-1 title"   >Sobre mim</h1>
+
+          <div class="col-lg-6 col-md-12 area-1 d-block d-lg-none">
+            <img src="/front/img/ft.png" class="img-fluid" alt="">
+          </div>
+
           <p class="lead area-1">Com ampla experiência na organização de eventos, transformo sonhos em realidade, criando momentos inesquecíveis. Tenho uma rede de colaboradores que me permite oferecer o melhor serviço dentro do orçamento de cada cliente, sem comprometer a qualidade.</p>
-          <div class="d-grid gap-2 col-6">
-            <button class="row btn btn-info" >
+          <div class="d-grid gap-2 col-lg-8 col-md-12 mt-5">
+            <button class="row btn " id="btn-info" >
               <div class="col-2 "><img src="../front/img/wtsp.png" class="img-fluid area-1" alt="png do whatsapp" id="img-wtsp"></div>
               <div class="col-9  btn-text area-1"><p>FALE COMIGO</p></div></button>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-12 area-1">
-          <img src="./img/image.png" class="img-fluid" alt="">
+        <div class="col-lg-6 col-md-12 area-1 d-none d-lg-block">
+          <img src="./img/ft.png" class="img-fluid" alt="">
         </div>
       </div>
+    </section>
+
+    <section id="Serviços" class="container-fluid mt-5">
+      <div class="container m-auto container-serviços">
+        <div class="title ">
+          <h1 class="display-1 text-white area-1 pt-5 pb-4">Meus Serviços</h1>
+        </div>
+      </div>
+
+      <div class="container m-auto">
+
+
+      <div class="card mb-3 container" style="max-width: auto;">
+        <div class="row g-0">
+
+          <div class="col-md-4 area-1">
+            <img src="/front/img/1.png" class="img-fluid rounded-start" alt="imagem de uma consultoria presencial">
+          </div>   
+          <div class="col-md-6">
+            <div class="card-body area-1">
+              <h5 class="card-title">Planejamento Completo de Eventos</h5>
+              <p class="card-text"> Desde aniversários, casamentos e formaturas até festas empresariais.</p>
+              <p class="card-text"><small class="text-body-secondary"><a href="#">oi aqui</a></small></p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="card mb-3 container" style="max-width: auto;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="/front/img/2.png" class="img-fluid rounded-start area-1" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title area-1">Consultoria persolnalizada</h5>
+              <p class="card-text area-1">Indicação de profissionais adequados ao perfil econômico de cada cliente sem comprometer a qualidade.</p>
+              <p class="card-text area-1"><small class="text-body-secondary"><a href="#">aqui</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3 container">
+        <h3 class="card-title text-center mt-5 area-1">Coordenação do Dia.</h3>
+        <ul class="ms-5 ps-5 card-text area-1">
+           <li>Lista de Convidados
+           <li> Local </li>
+           <li> Decoração</li>
+           <li> Cardápio</li>
+           <li> Doces e Entradas</li>
+           <li> Cerimonial e Recepção</li>
+           <li> Fotografia e Som</li>
+           <li> Convites e Lembrancinhas</li>
+           <li> Garçons e Segurança</li>
+           <li> Bebidas, Hotéis, Transporte e Logística</li>
+        </ul>
+      </div>
+
     </section>
         
 

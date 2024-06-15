@@ -1,6 +1,5 @@
 
 #navbarNav{
-    background-color: brown;
     text-align: end;
     
 }
@@ -11,12 +10,9 @@
 
 #menu{
     text-align: center;
-    background-color: #ffffff;
 }
 
 #navbarNav{
-    background-color: #ffffff;
-   
     justify-content: end;
 }
 
