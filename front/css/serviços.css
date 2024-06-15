@@ -6,3 +6,45 @@
     background-color: #ffffff;
     color: aliceblue;
 }
+
+#redes li{
+    list-style: none;
+
+}
+
+#redes li a{
+    text-decoration: none;
+}
+
+#redes li a:hover{
+    background-color: rgb(200, 200, 230);
+    color: #2C6893;
+}
+
+.link-zap{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+
+footer .card{
+    border: none;
+}
+
+#contatos li{
+    list-style: none;
+
+}
+
+#contatos li a{
+    text-decoration: none;
+}
+
+#Copyright li a{
+    text-decoration: none;
+}
+
+#Copyright li a:hover{
+    background-color: rgb(200, 200, 230);
+    color: #2C6893;
+}
