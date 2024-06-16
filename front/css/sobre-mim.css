@@ -1,15 +1,4 @@
 /* Copy this code after the above code */
-@keyframes jogar-top {
-    0% {
-      transform: scaleY(0.4);
-      transform-origin: 0% 100%;
-    }
-  
-    100% {
-      transform: scaleY(1);
-      transform-origin: 0% 100%;
-    }
-  }
 
   #sobre-mim{
     margin-bottom: auto;
@@ -23,10 +12,9 @@
 }
 
 button div P, button div p a{
-    margin: 0;
-    width: 80%;
     text-decoration: none;
     color: black;
+    margin: auto;
 }
 .btn-text{
     font-size: 1.5rem;
@@ -39,6 +27,7 @@ button div P, button div p a{
 
 #ft{
     rotate: 10deg;
+    align-self: center;
 }
 #btn-info:hover{
     background-color: #c7c541;
@@ -50,7 +39,7 @@ button div P, button div p a{
     }
   }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     .title{
         text-align: center;
     }
@@ -61,6 +50,10 @@ button div P, button div p a{
    @media screen and (min-width: 992px) { 
     #btn-info{
         width: 100%;
+    }
+
+    .title{
+        text-align: start;
     }
 }
   
