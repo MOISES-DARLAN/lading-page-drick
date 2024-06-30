@@ -30,7 +30,18 @@
   margin: auto;
 }
 
+.blue{
+  background-color: #2C6893;
+}
 
+footer li{
+  color: white;
+}
+
+footer li a{
+  text-decoration: none;
+  color: rgb(173, 142, 191);
+}
 
   #home-text{
       animation-name: jogar-top; 

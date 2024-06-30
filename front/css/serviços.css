@@ -4,7 +4,7 @@
 
 .card-serviços{
     background-color: #ffffff;
-    color: aliceblue;
+    color: rgb(12, 12, 12);
 }
 
 #redes li{
@@ -13,6 +13,7 @@
 }
 
 #redes li a{
+    color: black;
     text-decoration: none;
 }
 
