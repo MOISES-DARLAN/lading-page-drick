@@ -1,0 +1,221 @@
+<html><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realizando Sonhos, Criando Memórias - Cerimonialista Profissional</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #007bff;
+            --secondary-color: #6c757d;
+            --light-color: #f8f9fa;
+            --dark-color: #343a40;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            color: var(--dark-color);
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+        }
+        
+        .navbar-brand, .nav-link {
+            color: white !important;
+        }
+        
+        .hero {
+            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('https://websim.creation.engine/cerimonialista/images/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        
+        .about, .services {
+            padding: 80px 0;
+        }
+        
+        .service-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+        }
+        
+        footer {
+            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7));
+            color: white;
+            padding: 50px 0;
+        }
+        
+        #map {
+            height: 300px;
+        }
+
+        a{
+            text-decoration: none;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                padding: 50px 0;
+            }
+            .about, .services {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <h1>Dricka Ramos</h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero text-center">
+        <div class="container">
+            <h1 class="display-4 mb-4">Realizando Sonhos, Criando Memórias</h1>
+            <p class="lead mb-5">Transformamos seus sonhos em realidade com a melhor experiência possível.</p>
+            <a href="#contato" class="btn btn-light btn-lg">Mande uma mensagem</a>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="mb-4">Sobre a Cerimonialista</h2>
+                    <p>Com ampla experiência na organização de eventos, transformo sonhos em realidade, criando momentos inesquecíveis. Tenho uma rede de colaboradores que me permite oferecer o melhor serviço dentro do orçamento de cada cliente, sem comprometer a qualidade.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/img/dricka.jpeg" alt="Foto profissional da cerimonialista" class="img-fluid rounded-circle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="services bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-calendar-check service-icon mb-3"></i>
+                            <h5 class="card-title">Planejamento Completo de Eventos</h5>
+                            <p class="card-text">Desde aniversários, casamentos e formaturas até festas empresariais.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-comments service-icon mb-3"></i>
+                            <h5 class="card-title">Consultoria Personalizada</h5>
+                            <p class="card-text">Indicação de profissionais adequados ao perfil econômico de cada cliente.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clipboard-list service-icon mb-3"></i>
+                            <h5 class="card-title">Coordenação do Dia</h5>
+                            <p class="card-text">Organização de todos os aspectos do evento, incluindo lista de convidados, local, decoração, e muito mais.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <h4>Benefícios</h4>
+                <p>Oferecemos suporte completo, desde a quantidade de alimentos até reuniões com fornecedores, pagamentos e organização da logística do evento. Atendemos online e presencialmente, garantindo conforto e comodidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contato" class="bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>Entre em Contato</h5>
+                    <p>
+                        <i class="fas fa-map-marker-alt me-2"></i> Princesa Isabel número, 8000 bairro João Francisco Clímaco Nova Mamoré<br>
+                        <i class="fas fa-phone me-2"></i> <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5569992984015" target="_blank" rel="noopener noreferrer"> +55 69 9298-4015</a><br>
+                        <i class="fas fa-envelope me-2"></i><a href="mailto:adriana.ramosnm89@gmail.com" class="text-white">adriana.ramosnm89@gmail.com</a>
+                    </p>
+                    <div class="mt-3">
+                        <a href="https://www.facebook.com/dricka.ramos.9/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/dricka_ramos_cerimonial/" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        
+                    </div>
+                </div>
+               
+                <div class="col-md-4">
+                    <h5>Localização</h5>
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2166.39986405721!2d-65.3263667!3d-10.4179979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93d3a5d72a4051c1%3A0x49893325faa5ae9!2sAv.%20Princesa%20Isabel%2C%208000%20-%20Jo%C3%A3o%20Francisco%20Cl%C3%ADmaco%2C%20Nova%20Mamor%C3%A9%20-%20RO%2C%2076857-000!5e1!3m2!1spt-BR!2sbr!4v1721871936167!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+    <script>
+        function initMap() {
+            const location = { lat: -23.550520, lng: -46.633309 }; // São Paulo coordinates
+            const map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 15,
+                center: location
+            });
+            const marker = new google.maps.Marker({
+                position: location,
+                map: map
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            initMap();
+
+            const contactForm = document.getElementById('contactForm');
+            contactForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                // Here you would typically send this data to a server
+                console.log('Form submitted:', { name, email, message });
+                alert('Obrigado por entrar em contato! Retornaremos em breve.');
+                contactForm.reset();
+            });
+        });
+    </script>
+</body>
+</html>
