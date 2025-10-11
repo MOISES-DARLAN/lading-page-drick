@@ -1,221 +1,153 @@
-<html><head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Realizando Sonhos, Criando Memórias - Cerimonialista Profissional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <style>
-        :root {
-            --primary-color: #007bff;
-            --secondary-color: #6c757d;
-            --light-color: #f8f9fa;
-            --dark-color: #343a40;
-        }
-        
-        body {
-            font-family: 'Arial', sans-serif;
-            color: var(--dark-color);
-        }
-        
-        .navbar {
-            background-color: var(--primary-color);
-        }
-        
-        .navbar-brand, .nav-link {
-            color: white !important;
-        }
-        
-        .hero {
-            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7)), url('https://websim.creation.engine/cerimonialista/images/hero-bg.jpg');
-            background-size: cover;
-            background-position: center;
-            color: white;
-            padding: 100px 0;
-        }
-        
-        .btn-primary {
-            background-color: var(--primary-color);
-            border-color: var(--primary-color);
-        }
-        
-        .about, .services {
-            padding: 80px 0;
-        }
-        
-        .service-icon {
-            font-size: 3rem;
-            color: var(--primary-color);
-        }
-        
-        footer {
-            background: linear-gradient(rgba(0, 123, 255, 0.7), rgba(0, 123, 255, 0.7));
-            color: white;
-            padding: 50px 0;
-        }
-        
-        #map {
-            height: 300px;
-        }
+<!DOCTYPE html>
 
-        a{
-            text-decoration: none;
-            color: white;
-        }
-
-        @media (max-width: 768px) {
-            .hero {
-                padding: 50px 0;
-            }
-            .about, .services {
-                padding: 40px 0;
-            }
-        }
-    </style>
+<html class="light" lang="pt-br"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dricka Ramos</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;family=Noto+Sans:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>tailwind.config = {darkMode: "class", theme: {extend: {colors: {primary: "#607AFB", "background-light": "#f5f6f8", "background-dark": "#0f1323"}, fontFamily: {display: "Newsreader", sans: ["Noto Sans", "sans-serif"]}, borderRadius: {DEFAULT: "0.5rem", lg: "1rem", xl: "1.5rem", full: "9999px"}}}};</script>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <h1>Dricka Ramos</h1>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#sobre">Sobre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#servicos">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contato">Contato</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<body class="bg-background-light dark:bg-background-dark font-sans">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 md:px-10 lg:px-40 flex justify-center">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f3e7ed] dark:border-b-[#3a2832] w-full max-w-[960px] px-4 md:px-10 py-3">
+<div class="flex items-center gap-4 text-[#1b0e14] dark:text-[#f3e7ed]">
+<div class="size-6 text-primary">
+<svg fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#1b0e14] dark:text-[#f3e7ed] text-xl font-bold leading-tight tracking-[-0.015em] font-display">Dricka Ramos</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-end gap-8">
+<div class="flex items-center gap-9">
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] text-sm font-medium leading-normal" href="#about">Sobre</a>
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] text-sm font-medium leading-normal" href="#services">Serviços</a>
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] text-sm font-medium leading-normal" href="#benefits">Beneficios</a>
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] text-sm font-medium leading-normal" href="#contact">Contatos</a>
+</div>
+</nav>
+<div class="md:hidden">
+<button class="text-[#1b0e14] dark:text-[#f3e7ed]">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<div class="px-4 md:px-10 lg:px-40 flex flex-1 justify-center py-5">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<section class="w-full" id="home">
+<div class="@container">
+<div class="p-0 md:p-4">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-none md:rounded-xl items-center justify-center p-4 text-center" data-alt="Beautifully set wedding reception table with flowers and candles" style='background-image: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDyCCTKekq-JExsqTcMRJHeXoMlwcs2iNfJ5d-xAW3dYTjZrqbC9o3ytOO3eYQiImhmSl9mPwSEQOfkoTTGfYQ9uiz_ETULJtjerj7I9DRiyXkTBGfAewGe72k1Q19nGEgwMnI-sk0tqxgWLqYbeTOO5-f24ggYdHdeRfCfjcKTaYy1fEAt8mxE_eZFW_9AVBcKC6AhDzbGO2jw7VUe2gn4OfiHF2SF1Rlp0eD_R7rz6nq_yAa8CvPuS31sk9xsNOq8VOZ3zUAENUY");'>
+<div class="flex flex-col gap-4">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] font-display md:text-6xl">
+                                                Realizando Sonhos, Criando Memórias
+                                            </h1>
+<p class="text-white text-base font-normal leading-normal md:text-lg max-w-2xl mx-auto">
+                                               Transformando seus sonhos em realidade com a melhor experiência possível.
+                                            </p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-10 px-4 @[480px]:h-12 @[480px]:px-5 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] @[480px]:text-base @[480px]:font-bold @[480px]:leading-normal @[480px]:tracking-[0.015em] hover:bg-primary/90 transition-colors">
+<span class="truncate"><a href="https://wa.me/556992984015">Vamos conversar</a></span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24" id="about">
+<h2 class="text-[#1b0e14] dark:text-[#f3e7ed] text-3xl font-bold leading-tight tracking-[-0.015em] font-display px-4 pb-8 text-center">Sobre Dricka Ramos</h2>
+<div class="flex flex-col md:flex-row items-center gap-8 md:gap-12 p-4">
+<div class="w-full md:w-1/3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-xl w-full" data-alt="Portrait of Dricka Ramos, a smiling woman" style='background-image: url("/img/dricka.jpeg")'></div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex flex-col justify-center gap-4">
+<h3 class="text-[#1b0e14] dark:text-[#f3e7ed] text-2xl font-bold leading-tight tracking-[-0.015em] font-display">Dricka Ramos</h3>
+<p class="text-[#974e73] dark:text-[#d3a3bd] text-base font-normal leading-relaxed">
+                                         Com ampla experiência na organização de eventos, transformo sonhos em realidade, criando momentos inesquecíveis. Tenho uma rede de colaboradores que me permite oferecer o melhor serviço dentro do orçamento de cada cliente, sem comprometer a qualidade.
+                                        </p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-primary/5 dark:bg-primary/10 rounded-xl" id="services">
+<h2 class="text-[#1b0e14] dark:text-[#f3e7ed] text-3xl font-bold leading-tight tracking-[-0.015em] font-display px-4 pb-12 text-center">Serviços</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
+<div class="flex flex-col items-center text-center p-6 bg-background-light dark:bg-background-dark rounded-lg shadow-sm">
+<div class="text-primary text-5xl mb-4"><span class="material-symbols-outlined">celebration</span></div>
+<h3 class="text-[#1b0e14] dark:text-[#f3e7ed] text-xl font-bold font-display mb-2">Planejamento Completo de Eventos</h3>
+<p class="text-[#974e73] dark:text-[#d3a3bd]">Desde aniversários, casamentos e formaturas até festas empresariais.</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-background-light dark:bg-background-dark rounded-lg shadow-sm">
+<div class="text-primary text-5xl mb-4"><span class="material-symbols-outlined">group</span></div>
+<h3 class="text-[#1b0e14] dark:text-[#f3e7ed] text-xl font-bold font-display mb-2">Consultoria Personalizada</h3>
+<p class="text-[#974e73] dark:text-[#d3a3bd]">Indicação de profissionais adequados ao perfil econômico de cada cliente.
 
-    <section class="hero text-center">
-        <div class="container">
-            <h1 class="display-4 mb-4">Realizando Sonhos, Criando Memórias</h1>
-            <p class="lead mb-5">Transformamos seus sonhos em realidade com a melhor experiência possível.</p>
-            <a href="#contato" class="btn btn-light btn-lg">Mande uma mensagem</a>
-        </div>
-    </section>
+</p>
+</div>
+<div class="flex flex-col items-center text-center p-6 bg-background-light dark:bg-background-dark rounded-lg shadow-sm">
+<div class="text-primary text-5xl mb-4"><span class="material-symbols-outlined">checklist</span></div>
+<h3 class="text-[#1b0e14] dark:text-[#f3e7ed] text-xl font-bold font-display mb-2">Coordenação do Dia</h3>
+<p class="text-[#974e73] dark:text-[#d3a3bd]">Organização de todos os aspectos do evento, incluindo lista de convidados, local, decoração, e muito mais.</p>
+</div>
+</div>
+</section>
 
-    <section id="sobre" class="about">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="mb-4">Sobre a Cerimonialista</h2>
-                    <p>Com ampla experiência na organização de eventos, transformo sonhos em realidade, criando momentos inesquecíveis. Tenho uma rede de colaboradores que me permite oferecer o melhor serviço dentro do orçamento de cada cliente, sem comprometer a qualidade.</p>
-                </div>
-                <div class="col-lg-6">
-                    <img src="/img/dricka.jpeg" alt="Foto profissional da cerimonialista" class="img-fluid rounded-circle">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="servicos" class="services bg-light">
-        <div class="container">
-            <h2 class="text-center mb-5">Nossos Serviços</h2>
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-calendar-check service-icon mb-3"></i>
-                            <h5 class="card-title">Planejamento Completo de Eventos</h5>
-                            <p class="card-text">Desde aniversários, casamentos e formaturas até festas empresariais.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-comments service-icon mb-3"></i>
-                            <h5 class="card-title">Consultoria Personalizada</h5>
-                            <p class="card-text">Indicação de profissionais adequados ao perfil econômico de cada cliente.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="card h-100">
-                        <div class="card-body text-center">
-                            <i class="fas fa-clipboard-list service-icon mb-3"></i>
-                            <h5 class="card-title">Coordenação do Dia</h5>
-                            <p class="card-text">Organização de todos os aspectos do evento, incluindo lista de convidados, local, decoração, e muito mais.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center mt-5">
-                <h4>Benefícios</h4>
-                <p>Oferecemos suporte completo, desde a quantidade de alimentos até reuniões com fornecedores, pagamentos e organização da logística do evento. Atendemos online e presencialmente, garantindo conforto e comodidade.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contato" class="bg-dark text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 mb-4">
-                    <h5>Entre em Contato</h5>
-                    <p>
-                        <i class="fas fa-map-marker-alt me-2"></i> Princesa Isabel número, 8000 bairro João Francisco Clímaco Nova Mamoré<br>
-                        <i class="fas fa-phone me-2"></i> <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5569992984015" target="_blank" rel="noopener noreferrer"> +55 69 9298-4015</a><br>
-                        <i class="fas fa-envelope me-2"></i><a href="mailto:adriana.ramosnm89@gmail.com" class="text-white">adriana.ramosnm89@gmail.com</a>
-                    </p>
-                    <div class="mt-3">
-                        <a href="https://www.facebook.com/dricka.ramos.9/" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/dricka_ramos_cerimonial/" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        
-                    </div>
-                </div>
-               
-                <div class="col-md-4">
-                    <h5>Localização</h5>
-                    <div>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2166.39986405721!2d-65.3263667!3d-10.4179979!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93d3a5d72a4051c1%3A0x49893325faa5ae9!2sAv.%20Princesa%20Isabel%2C%208000%20-%20Jo%C3%A3o%20Francisco%20Cl%C3%ADmaco%2C%20Nova%20Mamor%C3%A9%20-%20RO%2C%2076857-000!5e1!3m2!1spt-BR!2sbr!4v1721871936167!5m2!1spt-BR!2sbr"  style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
-    <script>
-        function initMap() {
-            const location = { lat: -23.550520, lng: -46.633309 }; // São Paulo coordinates
-            const map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: location
-            });
-            const marker = new google.maps.Marker({
-                position: location,
-                map: map
-            });
-        }
-
-        document.addEventListener('DOMContentLoaded', () => {
-            initMap();
-
-            const contactForm = document.getElementById('contactForm');
-            contactForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                const name = document.getElementById('name').value;
-                const email = document.getElementById('email').value;
-                const message = document.getElementById('message').value;
-                
-                // Here you would typically send this data to a server
-                console.log('Form submitted:', { name, email, message });
-                alert('Obrigado por entrar em contato! Retornaremos em breve.');
-                contactForm.reset();
-            });
-        });
-    </script>
-</body>
-</html>
+<section class="py-16 md:py-24 bg-primary/5 dark:bg-primary/10 rounded-xl" id="contact">
+<h2 class="text-[#1b0e14] dark:text-[#f3e7ed] text-3xl font-bold leading-tight tracking-[-0.015em] font-display px-4 pb-12 text-center">Contatos</h2>
+<div class="flex flex-col md:flex-row gap-12 px-4">
+<div class="w-full md:w-1/2 flex flex-col gap-4">
+<p class="text-[#974e73] dark:text-[#d3a3bd] leading-relaxed">Tem dúvidas ou está pronto para começar a planejar? Entre em contato e vamos criar algo lindo juntos. Aguardo seu contato!</p>
+<div class="flex items-center gap-4 text-[#1b0e14] dark:text-[#f3e7ed]">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Princesa Isabel número, 8000 bairro João Francisco Clímaco Nova Mamoré</span>
+</div>
+<div class="flex items-center gap-4 text-[#1b0e14] dark:text-[#f3e7ed]">
+<span class="material-symbols-outlined text-primary">phone</span>
+<span> +55 69 9298-4015</span>
+</div>
+<div class="flex items-center gap-4 text-[#1b0e14] dark:text-[#f3e7ed]">
+<span class="material-symbols-outlined text-primary">email</span>
+<span>adriana.ramosnm89@gmail.com</span>
+</div>
+</div>
+<div class="w-full md:w-1/2">
+<form class="flex flex-col gap-4">
+<input class="w-full p-3 rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary text-[#1b0e14] dark:text-[#f3e7ed]" placeholder="Seu Nome" type="text"/>
+<input class="w-full p-3 rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary text-[#1b0e14] dark:text-[#f3e7ed]" placeholder="Seu Email" type="email"/>
+<textarea class="w-full p-3 rounded-lg border-gray-300 dark:border-gray-600 bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary text-[#1b0e14] dark:text-[#f3e7ed]" placeholder="Sua Messagem" rows="4"></textarea>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-12 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-primary/90 transition-colors" type="submit">
+<span class="truncate">Enviar mensagem</span>
+</button>
+</form>
+</div>
+</div>
+</section>
+</div>
+</div>
+</main>
+<footer class="bg-primary/10 dark:bg-primary/20">
+<div class="px-4 md:px-10 lg:px-40 flex justify-center py-5">
+<div class="flex flex-col md:flex-row items-center justify-between w-full max-w-[960px] gap-4">
+<p class="text-sm text-[#1b0e14] dark:text-[#f3e7ed]">© 2025 Dricka Ramos. Todos os direitos reservados</p>
+<div class="flex gap-4">
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+</a>
+<a class="text-[#1b0e14] dark:text-[#f3e7ed] hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<svg aria-hidden="true" class="h-6 w-6" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.585-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.585-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.069-1.645-.069-4.85s.011-3.585.069-4.85c.149-3.225 1.664-4.771 4.919-4.919C8.415 2.175 8.796 2.163 12 2.163m0-1.62c-3.258 0-3.66.012-4.94.071-4.268.194-6.32 2.249-6.516 6.516-.058 1.28-.07 1.682-.07 4.94s.012 3.66.07 4.94c.196 4.267 2.248 6.32 6.516 6.516 1.28.058 1.682.07 4.94.07s3.66-.012 4.94-.07c4.268-.196 6.32-2.248 6.516-6.516.058-1.28.07-1.682.07-4.94s-.012-3.66-.07-4.94c-.196-4.267-2.248-6.32-6.516-6.516C15.66.553 15.258.543 12 .543z"></path><path d="M12 6.837c-2.846 0-5.163 2.317-5.163 5.163s2.317 5.163 5.163 5.163 5.163-2.317 5.163-5.163-2.317-5.163-5.163-5.163zm0 8.703c-1.956 0-3.54-1.584-3.54-3.54s1.584-3.54 3.54-3.54 3.54 1.584 3.54 3.54-1.584 3.54-3.54 3.54z"></path><path d="M16.965 6.586a1.44 1.44 0 1 1 0 2.88 1.44 1.44 0 0 1 0-2.88z"></path></svg>
+</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
